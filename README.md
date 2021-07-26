@@ -7,7 +7,7 @@ This repository defines a docker image container the IBM Cloud CLI. The image is
 ### Pull Image
 
 ```
-docker pull jjustinic/ibm-cloud-cli
+docker pull jjustinic/ibmcloud
 ```
 
 ### Run Single Command
@@ -15,7 +15,7 @@ docker pull jjustinic/ibm-cloud-cli
 When running a single command, the `ibmcloud` command is called automatically. It is only necessary to pass the arguments.
 
 ```
-docker run jjustinic/ibm-cloud-cli help
+docker run jjustinic/ibmcloud help
 ```
 
 ### Run Multiple Commands
@@ -23,7 +23,7 @@ docker run jjustinic/ibm-cloud-cli help
 Use `-c` to run a series of commands. The full commands are required, including `ibmcloud`, and should be quoted.
 
 ```
-docker run jjustinic/ibm-cloud-cli -c 'ibmcloud help && ibmcloud config --list'
+docker run jjustinic/ibmcloud -c 'ibmcloud help && ibmcloud config --list'
 ```
 
 ### Run interactively
